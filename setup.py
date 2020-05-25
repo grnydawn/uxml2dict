@@ -5,7 +5,7 @@ def main():
     from setuptools import setup
     from uxml2dict import Xml2Dict as x2d
 
-    install_requires = ["microapp>=0.2.1", "xmltodict"]
+    install_requires = ["microapp>=0.2.3", "xmltodict"]
 
     setup(
         name=x2d._name_,

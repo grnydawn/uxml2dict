@@ -22,7 +22,7 @@ def test_basic(capsys):
     prj = MicroappProject()
     cmd = "uxml2dict \"%s\" -p" % data
 
-    ret = prj.main(cmd)
+    ret, fwds = prj.run_command(cmd)
 
     assert ret == 0
     captured = capsys.readouterr()

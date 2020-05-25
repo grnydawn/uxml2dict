@@ -7,7 +7,7 @@ import xmltodict
 class Xml2Dict(App):
 
     _name_ = "uxml2dict"
-    _version_ = "0.2.1"
+    _version_ = "0.2.2"
     _description_ = "Microapp xmltodict module wrapper"
     _long_description_ = "Microapp xmltodict module wrapper"
     _author_ = "Youngsung Kim"
@@ -22,7 +22,7 @@ class Xml2Dict(App):
 
         self.register_forward("data", type=Any, help="Python dictionary object")
 
-    def perform(self, mgr, args):
+    def perform(self, args):
 
         data = args.data["_"]
 
